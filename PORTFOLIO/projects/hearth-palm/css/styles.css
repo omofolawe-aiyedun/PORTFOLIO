@@ -1,0 +1,477 @@
+/* Shared styles for every page of the Hearth & Palm restaurant site. */
+
+:root {
+  --color-ink: #1d1612;
+  --color-ink-soft: #4a3f36;
+  --color-cream: #f6efe4;
+  --color-paper: #fffaf3;
+  --color-terracotta: #9c3b24;
+  --color-terracotta-dark: #7a2c1a;
+  --color-gold: #c4a35a;
+  --color-forest: #2f4a3c;
+  --color-line: rgba(29, 22, 18, 0.12);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+  --max-width: 1120px;
+  --header-height: 84px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-ink);
+  background: var(--color-cream);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+.logo-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+  z-index: 1000;
+  padding: 8px 12px;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: var(--header-height);
+  padding: 12px 6%;
+  background: rgba(246, 239, 228, 0.94);
+  border-bottom: 1px solid var(--color-line);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo-name {
+  display: block;
+  font-size: 1.45rem;
+  letter-spacing: 0.06em;
+}
+
+.logo-tag {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--color-line);
+  background: transparent;
+  padding: 10px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px 22px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--color-terracotta);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: var(--color-terracotta);
+  color: var(--color-paper);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--color-terracotta-dark);
+}
+
+.button-light {
+  background: transparent;
+  color: var(--color-paper);
+  border: 1px solid var(--color-paper);
+}
+
+.button-light:hover {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.hero {
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  place-items: center;
+  padding: 64px 6%;
+  color: var(--color-paper);
+  text-align: center;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(196, 163, 90, 0.28), transparent 42%),
+    linear-gradient(160deg, #2a1812 0%, #7a2c1a 48%, #2f4a3c 100%);
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  letter-spacing: 0.04em;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hero p {
+  max-width: 36rem;
+  margin: 0 auto 28px;
+  font-size: 1.15rem;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding: 72px 6%;
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-header {
+  max-width: 40rem;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.split-copy {
+  max-width: 40rem;
+}
+
+.muted {
+  color: var(--color-ink-soft);
+}
+
+.feature-grid,
+.menu-grid,
+.gallery-grid,
+.info-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body,
+.menu-item,
+.hours-card,
+.form-card {
+  padding: 22px;
+}
+
+.card h3,
+.menu-item h3 {
+  margin: 0 0 8px;
+  font-size: 1.6rem;
+}
+
+.page-hero {
+  padding: 72px 6% 40px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  letter-spacing: 0.08em;
+}
+
+.menu-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu-group h2 {
+  margin: 0 0 18px;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-gold);
+  padding-bottom: 8px;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 16px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.menu-item p,
+.menu-sub,
+.menu-note {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.menu-item.has-options {
+  grid-template-columns: 1fr;
+}
+
+.menu-note {
+  margin: 0 0 18px;
+  color: var(--color-ink-soft);
+}
+
+.menu-sub {
+  list-style: none;
+  padding: 8px 0 0;
+}
+
+.menu-sub li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.menu-group.full {
+  grid-column: 1 / -1;
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-terracotta);
+}
+
+.coming-soon {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 40px 28px;
+  text-align: center;
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+}
+
+.coming-soon .button {
+  margin-top: 12px;
+}
+
+.info-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--color-line);
+  background: var(--color-paper);
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-message {
+  display: none;
+  padding: 14px 16px;
+  background: #e7f0e8;
+  border: 1px solid #2f4a3c;
+}
+
+.form-message.is-visible {
+  display: block;
+}
+
+.cta-band {
+  padding: 72px 6%;
+  text-align: center;
+  color: var(--color-paper);
+  background: var(--color-forest);
+}
+
+.cta-band h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.site-footer {
+  padding: 40px 6%;
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 32px;
+}
+
+.site-footer a {
+  color: var(--color-gold);
+}
+
+.footer-bottom {
+  max-width: var(--max-width);
+  margin: 28px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(246, 239, 228, 0.15);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 6% 24px;
+    background: var(--color-cream);
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .split,
+  .feature-grid,
+  .menu-grid,
+  .info-grid,
+  .form-row,
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}

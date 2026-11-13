@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the luxury apartments available at Luxora Residences, including one-bedroom, two-bedroom and penthouse residences.">
+  <meta property="og:title" content="Luxora Residences | Luxury Apartments">
+
+<meta property="og:description" content="Discover premium luxury residences designed for modern living in Cape Town.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="images/residence-hero.jpg">
+
+
+  <title>Apartments | Luxora Residences</title>
+ <!--meta-tag-->
+  <meta
+    name="description"
+    content="Explore apartment options at Luxora Residences in Cape Town."
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/overrides.css">
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/motion.css">
+  <link rel="preload" as="image" href="images/optimized/residence-living-room.jpg" fetchpriority="high">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">
+        LUXORA<span> RESIDENCES</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="apartments.html" class="active">Apartments</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="nav-cta">Book a Viewing</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero-overlay"></div>
+
+      <div class="container page-hero-content">
+        <p class="eyebrow">FIND YOUR SPACE</p>
+        <h1>Explore Our <span>Residences.</span></h1>
+        <p>
+          Discover thoughtfully designed spaces for different lifestyles
+          in Cape Town.
+        </p>
+      </div>
+    </section>
+
+    <!-- Apartment Listings -->
+    <section class="listing-section section-padding">
+      <div class="container">
+
+        <div class="listing-intro">
+          <div>
+            <p class="eyebrow">THE COLLECTION</p>
+            <h2>Find Your Ideal Residence</h2>
+          </div>
+
+          <p>
+            Browse our sample apartment collection below.
+            Contact us to confirm actual availability, features, and pricing.
+          </p>
+        </div>
+
+        <div class="demo-notice">
+          Demo content: apartment names, descriptions, and prices are examples
+          and are not confirmed property listings.
+        </div>
+
+        <div class="filter-bar" aria-label="Filter residences by bedroom type">
+          <span class="filter-label">Bedrooms</span>
+          <button type="button" class="filter-button active" data-filter="all">All</button>
+          <button type="button" class="filter-button" data-filter="one">1 Bedroom</button>
+          <button type="button" class="filter-button" data-filter="two">2 Bedrooms</button>
+          <button type="button" class="filter-button" data-filter="penthouse">Penthouse</button>
+        </div>
+
+        <div class="apartment-grid">
+
+          <!-- Apartment 1 -->
+          <article class="apartment-card" data-residence="one">
+            <img decoding="async"
+              src="images/optimized/apartment-01.jpg"
+              alt="Modern one-bedroom apartment interior"
+              loading="lazy"
+            >
+
+            <div class="apartment-info">
+              <p class="apartment-type">ONE BEDROOM</p>
+              <h3>Contemporary Residence</h3>
+
+              <p class="apartment-description">
+                A welcoming apartment concept with a modern layout
+                and comfortable living area.
+              </p>
+
+              <ul class="property-details">
+                <li>1 Bedroom</li>
+                <li>1 Bathroom</li>
+                <li>Open-plan living area</li>
+              </ul>
+
+              <div class="apartment-footer">
+                <span>Sample: R 12,000 / month</span>
+                <a href="contact.html?residence=One-bedroom" aria-label="Enquire about the one-bedroom residence">↗</a>
+              </div>
+
+              <a href="contact.html?residence=One-bedroom" class="button button-gold apartment-button">
+                Enquire About This Apartment
+              </a>
+            </div>
+          </article>
+
+          <!-- Apartment 2 -->
+          <article class="apartment-card" data-residence="two">
+            <img decoding="async"
+              src="images/optimized/apartment-02.jpg"
+              alt="Elegant two-bedroom apartment interior"
+              loading="lazy"
+            >
+
+            <div class="apartment-info">
+              <p class="apartment-type">TWO BEDROOM</p>
+              <h3>Signature Residence</h3>
+
+              <p class="apartment-description">
+                A spacious apartment concept designed for flexible
+                everyday living.
+              </p>
+
+              <ul class="property-details">
+                <li>2 Bedrooms</li>
+                <li>2 Bathrooms</li>
+                <li>Spacious living area</li>
+              </ul>
+
+              <div class="apartment-footer">
+                <span>Sample: R 18,000 / month</span>
+                <a href="contact.html?residence=Two-bedroom" aria-label="Enquire about the two-bedroom residence">↗</a>
+              </div>
+
+              <a href="contact.html?residence=Two-bedroom" class="button button-gold apartment-button">
+                Enquire About This Apartment
+              </a>
+            </div>
+          </article>
+
+          <!-- Apartment 3 -->
+          <article class="apartment-card" data-residence="penthouse">
+            <img decoding="async"
+              src="images/optimized/apartment-03.jpg"
+              alt="Luxury penthouse interior"
+              loading="lazy"
+            >
+
+            <div class="apartment-info">
+              <p class="apartment-type">PENTHOUSE</p>
+              <h3>The Luxora Penthouse</h3>
+
+              <p class="apartment-description">
+                An elevated apartment concept with generous space
+                and refined interior details.
+              </p>
+
+              <ul class="property-details">
+                <li>Multiple bedrooms</li>
+                <li>Premium living space</li>
+                <li>Contemporary design</li>
+              </ul>
+
+              <div class="apartment-footer">
+                <span>Sample: R 35,000 / month</span>
+                <a href="contact.html?residence=Penthouse" aria-label="Enquire about the penthouse">↗</a>
+              </div>
+
+              <a href="contact.html?residence=Penthouse" class="button button-gold apartment-button">
+                Enquire About This Apartment
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Viewing CTA -->
+    <section class="listing-cta section-padding">
+      <div class="container listing-cta-content">
+        <div>
+          <p class="eyebrow">HAVE QUESTIONS?</p>
+          <h2>Let's Find Your Next Home.</h2>
+          <p>
+            Contact Luxora Residences to discuss your requirements
+            and ask about arranging a viewing.
+          </p>
+        </div>
+
+        <a href="contact.html" class="button button-gold">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          LUXORA<span> RESIDENCES</span>
+        </a>
+
+        <p>Refined living in Cape Town.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="apartments.html">Apartments</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Cape Town, South Africa</p>
+        <a href="tel:09025914315">09025914315</a>
+        <a href="mailto:omofolaweaiyedun@gmail.com">
+          omofolaweaiyedun@gmail.com
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span id="current-year"></span> Luxora Residences. All rights reserved.</p>
+      
+    </div>
+  </footer>
+
+  <script src="js/motion.js"></script>
+</body>
+</html>

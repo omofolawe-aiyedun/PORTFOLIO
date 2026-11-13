@@ -1,0 +1,5 @@
+.site-header {
+  position: fixed;
+  background: rgba(31, 41, 36, .91);
+  backdrop-filter: blur(12px);
+}

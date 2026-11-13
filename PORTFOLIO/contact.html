@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheal | Contact</title>
+    <meta name="description" content="Start a conversation with Micheal about a new website, redesign, or website updates for your local business.">
+    <meta name="theme-color" content="#0e0d0b">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link pill" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <a class="site-brand" href="index.html" aria-label="MY PORTFOLIO home"><span>MY</span> PORTFOLIO</a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+            <span class="menu-toggle-label">Menu</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="designs.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="pill pill-header" href="contact.html" aria-current="page">Let's Talk</a>
+    </header>
+
+    <main id="main-content">
+        <section class="page-intro">
+            <p class="eyebrow">Contact</p>
+            <h1 class="page-title">Tell me about your project.</h1>
+            <p class="lede">Share what you’re looking to build and the results you want. I’ll follow up using the contact details you provide, or you can reach me directly.</p>
+        </section>
+
+        <section class="section contact-layout">
+            <div class="contact-guidance">
+                <h2 class="gold-heading">What to send</h2>
+                <ul class="send-list">
+                    <li>Your business name</li>
+                    <li>What the site must do</li>
+                    <li>The address of your current website, if you have one</li>
+                </ul>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">Email</span>
+                        <p class="contact-pending"><a href="mailto:omofolaweaiyedun@gmail.com">omofolaweaiyedun@gmail.com</a></p>
+                    </li>
+                    <li>
+                        <span class="contact-label">Phone or WhatsApp</span>
+                        <p class="contact-pending"><a href="tel:09025914315">09025914315</a></p>
+                    </li>
+                </ul>
+            </div>
+
+            <form action="mailto:omofolaweaiyedun@gmail.com" method="post" enctype="text/plain" class="contact-form" aria-labelledby="contact-form-heading">
+                <h2 id="contact-form-heading" class="contact-form-title">Start a project enquiry</h2>
+                <p class="contact-form-note">A few details will help me understand what you need. Submitting prepares an email in your email app.</p>
+
+                <div class="contact-form-row">
+                    <div class="contact-form-field">
+                        <label for="contact-name">Full name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="contact-name" name="Full name" autocomplete="name" required>
+                    </div>
+                    <div class="contact-form-field">
+                        <label for="contact-phone">Phone <span class="optional-label">(optional)</span></label>
+                        <input type="tel" id="contact-phone" name="Phone" autocomplete="tel">
+                    </div>
+                </div>
+
+                <div class="contact-form-field">
+                    <label for="contact-email">Email address <span aria-hidden="true">*</span></label>
+                    <input type="email" id="contact-email" name="Email" autocomplete="email" required>
+                </div>
+
+                <div class="contact-form-row">
+                    <div class="contact-form-field">
+                        <label for="project-type">Choose website type <span aria-hidden="true">*</span></label>
+                        <select id="project-type" name="Website type" required>
+                            <option value="" selected disabled>Choose a website type</option>
+                            <option>Single-page website</option>
+                            <option>Multi-page website</option>
+                            <option>Portfolio website</option>
+                            <option>E-commerce website</option>
+                            <option>Custom website</option>
+                        </select>
+                    </div>
+                    <div class="contact-form-field">
+                        <label for="project-timeline">Preferred timeline</label>
+                        <select id="project-timeline" name="Preferred timeline">
+                            <option value="" selected>Choose a timeline</option>
+                            <option>As soon as possible</option>
+                            <option>Within 1–2 months</option>
+                            <option>In 3 months or more</option>
+                            <option>Flexible</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contact-form-field">
+                    <label for="contact-message">Project brief <span aria-hidden="true">*</span></label>
+                    <textarea id="contact-message" name="Project brief" rows="5" placeholder="Tell me about your business, goals, and any features you have in mind." required></textarea>
+                </div>
+                <button class="pill" type="submit">Prepare my enquiry</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a><a href="about.html">About</a><a href="designs.html">Projects</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+        </nav>
+        <p>© <span data-current-year>2026</span> Micheal. Custom websites for local businesses.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
